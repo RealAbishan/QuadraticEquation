@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var firstTerm = ""
-    @State private var secondTerm = ""
-    @State private var thirdTerm = ""
-    @State private var valueOfPositiveX = "0.0"
-    @State private var valueOfNegativeX = "0.0"
+    @AppStorage("firstField") private var firstTerm = ""
+    @AppStorage("secondField") private var secondTerm = ""
+    @AppStorage("thirdField") private var thirdTerm = ""
+    @AppStorage("firstValue") private var valueOfPositiveX = "0.0"
+    @AppStorage("secondValue") private var valueOfNegativeX = "0.0"
     
     var body: some View {
         ZStack {
